@@ -2,13 +2,15 @@
   "name": "home-web",
   "version": "1.0.0",
   "description": "",
-  "main": "callbackSample.js",
+  "main": "shopping.js",
   "scripts": {
+    "start": "node api/shopping.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "http-server": "^14.1.1",
     "uid-safe": "^2.1.5"
   }

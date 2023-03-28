@@ -102,7 +102,8 @@ http.createServer((request, response) => {
         })
         return
     } else if (path === '/api/shopping' && method === 'GET') {
-        response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
+        // response.setHeader('Access-Control-Allow-Origin', 'file://wsl.localhost/Ubuntu/home/hori/src/home/frontend/')
+        response.setHeader('Access-Control-Allow-Origin', '*')
         response.writeHead(200)
         const responseBodyJson = {
             shoppingList: shoppingList
@@ -134,6 +135,7 @@ http.createServer((request, response) => {
 
             shoppingList.push(shoppingItem)
 
+            response.setHeader('Access-Control-Allow-Origin', '*')
             response.writeHead(201)
             response.end()
         })
