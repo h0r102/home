@@ -1,3 +1,5 @@
+
+
 var shoppingListCheckbox = function () {
     var shoppingListCheckboxes = [];
     var SPACE_KEY = 32;

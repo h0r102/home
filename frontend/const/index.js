@@ -1,6 +1,3 @@
-// if (!process.env.API_ROOT) {
-//     throw new Error('process.env.API_ROOT is not set')
-// }
+const API_ROOT = 'https://home-h0r102.vercel.app/api'
+// const API_ROOT = 'http://localhost:8080'
 
-// exports.API_ROOT = process.env.API_ROOT
-exports.API_ROOT = ""

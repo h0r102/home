@@ -71,5 +71,5 @@
 }
 
 input[type='checkbox'].shopping-item-checkbox {
-    display: none;
+    display: inline;
 }

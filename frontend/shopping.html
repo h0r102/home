@@ -10,8 +10,15 @@
 <body>
 
     <h1>買い物アプリケーション</h1>
-    <input id="shopping-item-name-input" type="text" />
-    <button id="shopping-item-add-button" disabled>追加</button>
+    <div>
+        <input id="shopping-item-name-input" type="text" />
+        <button id="shopping-item-add-button" disabled>追加</button>
+    </div>
+    <div>
+        <button id="delete-checked-items">チェック済を削除</button>
+        <button id="set-all-items-checked">全項目チェック</button>
+        <button id="unset-all-items-checked">全項目チェックを外す</button>
+    </div>
     <h2>買い物リスト</h2>
     <table>
         <thead>
@@ -25,8 +32,9 @@
     <dev id="shopping-list-dev">
     </dev>
     <a href="/hello.html">helloへ</a>
+    <script src="./const/index.js"></script>
     <script src="./components/shopping.js"></script>
-    <script src="./components/shoppingList.js"></script>
+    <!-- <script src="./components/shoppingList.js"></script> -->
 </body>
 
 </html>
